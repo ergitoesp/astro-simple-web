@@ -1,0 +1,14 @@
+---
+import projects from '../../config/projects.json'
+---
+
+<h2 class="font-bold text-5xl my-5">Projects</h2>
+<div class="grid grid-cols-3 gap-4 p-4">
+{
+    projects.map(projects => (
+        <div class=" bg-slate-900 p-10 rounded-xl flex-1 text-center gap-y-3">
+            <h2 class="font-bold text-2xl md:text-left">{projects.title}</h2>
+            <a class="font-mono" href="https://github.com/ergitoesp">{projects.description}</a>
+                </div>
+    ))
+}
